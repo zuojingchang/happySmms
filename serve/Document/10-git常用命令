@@ -1,0 +1,17 @@
+常用命令
+    git clone  仓库地址   // 第一次下载
+    git add .            // 纳入版本控制
+    git commit -m"提示信息"  // 提交到本地仓库
+    git push origin master  // 推送到远程服务器
+
+    git pull 仓库地址  // 第二个以后下载
+
+    git status  // 查看状态
+
+
+    git config --global user.email "lzx@itsource.cn"
+    git config --global user.name "xhl"
+
+
+
+    https://github.com/sineLT/happysmms.git

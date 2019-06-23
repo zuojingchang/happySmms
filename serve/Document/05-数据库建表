@@ -1,0 +1,29 @@
+1. 账号表
+    create table `accounts` (
+        id int primary key auto_increment,
+        `avatarUrl` text,
+        `account` varchar(50),
+        `password` varchar(50),
+        `userGroup` varchar(50),
+        `ctime` timestamp default current_timestamp
+    );
+
+
+2. 商品表
+    create table `goods` (
+        id int primary key auto_increment,
+        `ctime` timestamp default current_timestamp,
+        category varchar(50),
+        barCode varchar(50),
+        goodsName varchar(50),
+        costPrice float(10, 2),
+        salePrice float(10, 2),
+        marketPrice float(10, 2),
+        stockCount int,
+        goodsWeight float(10, 2),
+        goodsUnit varchar(10)
+        vipDiscount  varchar(10),
+        promotion  varchar(10),
+        goodsDesc text 
+    );
+

@@ -1,0 +1,32 @@
+
+准备步骤:
+    1 安装
+       yarn add echarts
+
+    2. 引入 
+        import echarts from 'echarts'
+
+    3. 挂载在原型上
+        Vue.prototype.echarts = echarts
+
+
+使用步骤:
+    1. 准备具备宽和高的容器
+        <div id="sellCharts" style="height:400px; background-color: red"></div>
+
+    2. 初始化报表
+        var sellCharts = this.echarts.init( document.getElementById('sellCharts') )
+
+    3. 写配置
+        var option = {
+            ......
+        }
+
+    4. 使用配置生成报表
+        sellCharts.setOption( option )
+
+
+
+    使用方法：获取到后端数据，重新 setOption 即可重新渲染。
+
+
